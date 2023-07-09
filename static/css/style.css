@@ -12,7 +12,7 @@
 
 .active,
 .collapsible:hover {
-  background-color: #555;
+  background-color: #b6adab21;
 }
 
 .collapsible:after {
@@ -58,28 +58,124 @@ body {
 }
 
 html {
-  background-color: #555;
+  background-color: #b6adab21;
 }
 
 .btn {
   margin: 10px;
 }
 
-.logo {
-  display: inline-block;
-}
 
 p {
-  font-size: 20px !important;
+  font-size: 23px !important;
 }
 
 h3 {
-  font-size: 28px !important;
+  font-size: 30px !important;
   font-weight: bold !important;
 }
 
 h4 {
-  font-size: 24px !important;
+  font-size: 26px !important;
   font-weight: bold !important;
 
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+section {
+  grid-column: 2/5;
+}
+
+aside {
+  grid-column: 1/2;
+  background-color: #b6adab21;
+  padding: 10px;
+}
+
+.navbar {
+  background-color: #b6adab21;
+  padding: 10px 25px;
+  margin-bottom: 20px;
+}
+
+.navbar>.container {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.logo {
+  grid-column: 1/2;
+}
+
+div.title {
+  grid-column: 2/5;
+  margin-right: 5%;
+}
+
+div.title h1 {
+  font-size: 35px !important;
+  margin-right: 5%;
+  margin-left: 30%;
+}
+
+aside p a {
+  text-decoration: none;
+  color: black;
+}
+
+aside p a:hover {
+  text-decoration: underline;
+  color: #0a58ca;
+  font-weight: bold;
+}
+
+hr.hide {
+  display: none;
+}
+
+
+
+
+@media (max-width:800px) {
+
+  main,
+  aside,
+  section {
+    display: block !important;
+    margin-bottom: 10px;
+  }
+
+  hr.hide {
+    display: block
+  }
+
+  .navbar>.container {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+  }
+
+  .logo {
+    grid-row: 1/2;
+    grid-column: 1;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  div.title {
+    grid-row: 2/3;
+    grid-column: 1;
+    font-size: 20px !important;
+  }
+
+  div.title h1 {
+    font-size: 30px !important;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
 }

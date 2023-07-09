@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Hide the nested lists by default */
+        .collapse-list ul {
+            display: none;
+        }
+
+        /* Show the nested lists when their parent is clicked */
+        .collapse-list.active ul {
+            display: block;
+        }
+
+        .collapse-btn {
+            background: none;
+            border: none;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p><a href="#التقدم_والنمو" class="nav-link">1- التقدم والنمو</a> <button class="collapse-btn">+</button></p>
+        <div class="collapse-list">
+            <ul>
+                <li><a href="#التقدم_المادي" class="nav-link">1-1- التقدم المادي</a></li>
+                <li><a href="#التقدم_الأخلاقي_والمعنوي" class="nav-link">1-2- التقدم الأخلاقي والمعنوي</a></li>
+            </ul>
+        </div>
+        <p><a href="#التعليم" class="nav-link">2- التعليم</a> <button class="collapse-btn">+</button></p>
+        <div class="collapse-list">
+            <ul>
+                <li><a href="#البحث_المفتوح" class="nav-link">2-1- البحث المفتوح</a></li>
+                <li><a href="#قوة_التحول_التغيير" class="nav-link">2-2- قوة التحول (التغيير)</a></li>
+            </ul>
+        </div>
+
+        <p><a href="#الإيمان" class="nav-link">3-الإيمان</a>  <button class="collapse-btn">+</button></p>
+        <div class="collapse-list">
+            <ul>
+                <li><a href="#الإلهي_غير_المحدود" class="nav-link">3-1-الإلهي غير المحدود</a></li>
+                <li><a href="#التوحيد" class="nav-link">3-2-التوحيد</a></li>
+                <li><a href="#العقل" class="nav-link">3-3العقل</a></li>
+                <li><a href="#العمل_الفعال_في_العالم" class="nav-link">3-4-العمل الفعال في العالم</a></li>
+                <li> <a href="#ثقافة_الإسلام" class="nav-link">3-5-ثقافة الإسلام</a></li>
+                <li><a href="دور_الإمام#" class="nav-link">3-6-دور الإمام</a></li>
+                <li><a href="#الاسماعيليون" class="nav-link">3-7-الاسماعيليون</a></li>
+            </ul>
+        </div>
+
+        <p> <a href="#التعددية" class="nav-link">4-التعددية</a> <button class="collapse-btn">+</button></p>
+        <div class="collapse-list">
+            <ul>
+                <li><a href="#وحدة_الإنسانية" class="nav-link">4-1-وحدة الإنسانية</a></li>
+                <li><a href="#التلاقي_الخلاق" class="nav-link">4-2-التلاقي الخلاق</a></li>
+                <li class="collapse-list">
+                    <a href="#العالمية(الكوزموبوليتانية)" class="nav-link">4-3-العالمية (الكوزموبوليتانية)</a>  <button class="collapse-btn">+</button>
+                    <ul>
+                        <li><a href="#الحساسية_الحقيقية" class="nav-link">4-3-1-الحساسية الحقيقية</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+
+        <p> <a href="#التنمية" class="nav-link">5-التنمية</a></p>
+        <div class="collapse-list">
+            <ul>
+                <li><a href="#التشارك_الأصيل" class="nav-link">5-1-التشارك الأصيل</a></li>
+                <li class="collapse-list">
+                    <a href="#التجمع" class="nav-link">5-2-التجمع (التجمعية)</a>
+                    <ul>
+                        <li><a href="#رأس_المال_المؤسساتي" class="nav-link">5-2-1-رأس المال المؤسساتي</a></li>
+                        <li><a href="#الإدارة" class="nav-link">5-2-2الإدارة</a></li>
+                        <li class="collapse-list">
+                            <a href="#التعقيد" class="nav-link">5-2-3التعقيد</a>
+                            <ul>
+                                <li><a href="#تعدد_المدخلات" class="nav-link">5-2-3-1تعدد المدخلات</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#رأس_المال_البشري" class="nav-link">5-2-4-رأس المال البشري</a></li>
+                    </ul>
+                </li>
+                <li><a href="#البيئة_الممكنة" class="nav-link">5-3-البيئة الممكنة</a></li>
+                <li> <a href="#العمل_الطوعي" class="nav-link">5-4-العمل الطوعي</a></li>
+                <li> <a href="#المجتمع_المدني" class="nav-link">5-5المجتمع المدني</a></li>
+                <li> <a href="#مجتمع_المعرفة" class="nav-link">5-6-مجتمع المعرفة</a></li>
+                <li> <a href="#الموقع_الطبيعي" class="nav-link">5-7-الموقع الطبيعي كفاعل في التنمية</a></li>
+            </ul>
+        </div>
+
+        <p> <a href="#نوعية_الحياة" class="nav-link">6-نوعية الحياة</a></p>
+        <div class="collapse-list">
+            <ul>
+                <li> <a href="#معايير_أعلى_للعيش" class="nav-link">6-1-معايير أسمى للعيش</a></li>
+                <li> <a href="#الحرية_الإيجابية" class="nav-link">6-2-الحرية الإيجابية</a></li>
+                <li> <a href="#الشخصية_الذاتية" class="nav-link">6-3-الشخصية (الذاتية)</a></li>
+                <li class="collapse-list">
+                    <a href="#الديموقراطية_الفعالة" class="nav-link">6-4-الديموقراطية الفعالة</a>
+                    <ul>
+                        <li><a href="#الحوكمة" class="nav-link">6-4-1-الحوكمة</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#الثقافة" class="nav-link">6-5-الثقافة</a></li>
+            </ul>
+        </div>
+
+        <p><a href="#الاستمرارية_التاريخية" class="nav-link">7-الاستمرارية التاريخية</a></p>
+        <p><a href="#الانسيابية" class="nav-link">8-الانسيابية Elusiveness</a></p>
+        <p><a href="#المشاكل" class="nav-link">9-المشاكل</a></p>
+
+    </div>
+
+    <script>
+        // Get all the collapse-list elements
+        var collapseLists = document.querySelectorAll('.collapse-list');
+        var collapseBtns = document.querySelectorAll('.collapse-btn');
+
+        // Add click event listener to each collapse button
+        collapseBtns.forEach(function (collapseBtn, i) {
+            collapseBtn.addEventListener('click', function () {
+                var collapseList = collapseLists[i];
+                collapseList.classList.toggle('active');
+
+                // Change the button text on toggle
+                if (collapseList.classList.contains('active')) {
+                    collapseBtn.textContent = '-';
+                } else {
+                    collapseBtn.textContent = '+';
+                }
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>
