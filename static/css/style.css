@@ -1,0 +1,85 @@
+.collapsible {
+  background-color: #E5E4E2;
+  color: night;
+  cursor: pointer;
+  padding: 18px;
+  width: 20%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+.auto-style1 {
+  text-align: center;
+}
+
+.auto-style2 {
+  margin-left: 40px;
+}
+
+.auto-style3 {
+  margin-left: 80px;
+}
+
+.auto-style4 {
+  margin-left: 120px;
+}
+
+body {
+  direction: rtl;
+  background-color: azure;
+  font-family: 'Amiri', serif !important;
+}
+
+html {
+  background-color: #555;
+}
+
+.btn {
+  margin: 10px;
+}
+
+.logo {
+  display: inline-block;
+}
+
+p {
+  font-size: 20px !important;
+}
+
+h3 {
+  font-size: 28px !important;
+  font-weight: bold !important;
+}
+
+h4 {
+  font-size: 24px !important;
+  font-weight: bold !important;
+
+}
